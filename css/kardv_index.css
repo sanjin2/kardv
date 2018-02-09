@@ -1,0 +1,27 @@
+.head{
+	width: 1000px;
+	height: 104px;
+	margin: 0 auto;
+}
+.head .head_left{
+	width: 368px;
+	float: left;
+}
+.head .head_left span{
+	display: inline-block;
+	/*height: 26px;*/
+}
+.head .head_left img{
+	display: block;
+	vertical-align: middle;
+}
+.head .head_right{
+	width: 446px;
+	font-size: 12px;
+	float: right;
+}
+.head .head_right .head_right_search{
+	width: 100%;
+	height:40px;
+	background:red;
+}
