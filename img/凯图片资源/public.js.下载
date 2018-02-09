@@ -1,0 +1,192 @@
+$(function() {
+    //nav
+    $('.nav_list li').hover(function() {
+        $(this).addClass('cur');
+        $(this).children('dl.subnav').stop(true, true).slideDown(300);
+    }, function() {
+        $(this).removeClass('cur');
+        $(this).children('dl.subnav').stop(true, true).slideUp(300);
+    })
+    //pro
+    $('.pro_list li').hover(function() {
+        $(this).find('.view').stop(true, true).animate({ left: 0 }, 300)
+    }, function() {
+        $(this).find('.view').stop(true, true).animate({ left: -184 }, 300)
+    })
+    $('.prolist li').hover(function() {
+        $(this).find('.view').stop(true, true).animate({ left: 0 }, 300)
+    }, function() {
+        $(this).find('.view').stop(true, true).animate({ left: -184 }, 300)
+    })
+    //download
+    $('.download_list li:odd').addClass('double');
+    //pro_show
+    $('.dpro_show_main ul li').click(function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('#small .vm').find('img').eq(0).show().siblings().remove();
+
+        if ($(this).find('img').eq(1).attr('src') == "/UpLoadFile/noimg.png") {
+            $('#small .vm').find('img').attr('src', "/UpLoadFile/noimg.png").removeAttr("height").removeAttr("width").removeAttr("style").width(65);
+
+        }
+        else {
+            $('#small .vm').find('img').attr('src', $(this).find('img').eq(0).attr('src'));
+            $('#bigBox .bigImg').find('img').attr('src', $(this).find('img:last').attr('src'));
+        }
+
+        if ($.trim($(this).find('img').eq(1).attr('src')).indexOf("noimg") != -1 || $.trim($(this).find('img').eq(1).attr('src')).indexOf("loading") != -1) {
+
+            $('#bigBox .bigImg').find('img').attr('src', "/UpLoadFile/noimg.png");
+        }
+
+        $(".magnifierView img").LoadImage(true, 349, 234, "/UpLoadFile/loading.gif");
+        setTimeout(function() {
+
+            jQuery("img[name=loadings]").attr("src", "/UpLoadFile/noimg.png").width(65)
+
+        }, 3000);
+    })
+    //proshow选项卡
+    $('.pro_show .tit span').click(function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.pro_show_con .item').eq($(this).index()).show().siblings().hide();
+    })
+
+    var num = 4;
+    var imgList = $('.dpro_show_main ul li');
+    var imgBox = $('.dpro_show_main ul');
+    var index = 0;
+    if (imgList.length < 4) return false;
+    function next() {
+        if (index < 0) index = 0;
+        else if (index > imgList.length - num) index = imgList.length - num;
+        imgBox.stop(true, true).animate({ left: -index * 80 });
+    }
+    $('span.dleft').click(function() {
+        index--;
+        next();
+    })
+    $('span.dright').click(function() {
+        index++;
+        next();
+    })
+
+})
+//首页幻灯
+function index_show() {
+    new Marquee(
+	{
+	    MSClassID: "show_main", //banner的ID
+	    ContentID: "show_con", //ul的ID
+	    TabID: "show_num",
+	    TabEvent: "onclick",
+	    Direction: 2,
+	    Step: 0.3,
+	    Width: 955,
+	    Height: 346,
+	    Timer: 20,
+	    DelayTime: 4000,
+	    WaitTime: 4000,
+	    ScrollStep: 1,
+	    SwitchType: 2, //轮显方式
+	    AutoStart: 1
+	});
+}
+
+$(function() {
+
+
+    // Magnifier--放大镜
+    (function() {
+        var oBig = $('#bigBox');
+        var oSmall = $('#small');
+        var oMark = oSmall.children('.mark');
+
+        function mouseMove(e) {
+            var $this = $(this);
+            var mouseX = e.pageX - $this.offset().left - oMark.outerWidth() / 2;
+            var mouseY = e.pageY - $this.offset().top - oMark.outerHeight() / 2;
+
+            updateMark(mouseX, mouseY);
+
+        }
+
+        function updateMark(l, t) {
+            if (l < 0) {
+                l = 0;
+            }
+            else if (l > oSmall.outerWidth() - oMark.outerWidth()) {
+                l = oSmall.outerWidth() - oMark.outerWidth();
+            }
+
+            if (t < 0) {
+                t = 0;
+            }
+            else if (t > oSmall.outerHeight() - oMark.outerHeight()) {
+                t = oSmall.outerHeight() - oMark.outerHeight();
+            }
+            oMark.css({ left: l, top: t, display: 'block' });
+
+            var scaleX = l / oSmall.outerWidth();
+            var scaleY = t / oSmall.outerHeight();
+            updateBig(scaleX, scaleY);
+        }
+
+        function updateBig(scaleX, scaleY) {
+            var oBigImg = oBig.children('.bigImg');
+            var x = scaleX * oBigImg.outerWidth();
+            var y = scaleY * oBigImg.outerHeight();
+
+            if (x < 0) {
+                x = 0;
+            }
+            else if (x > oBigImg.outerWidth() - oBig.outerWidth() + 2) {
+                x = oBigImg.outerWidth() - oBig.outerWidth() + 2;
+            }
+
+            if (y < 0) {
+                y = 0;
+            }
+            else if (y > oBigImg.outerHeight() - oBig.outerHeight() + 2) {
+                y = oBigImg.outerHeight() - oBig.outerHeight() + 2;
+            }
+            oBig.css({ display: 'block' });
+            oBigImg.css({ left: -x, top: -y });
+        }
+
+        function cancle() {
+            oBig.css({ display: 'none' });
+            oMark.css({ display: 'none' });
+        }
+
+        oSmall.bind('mousemove', mouseMove).bind('mouseleave', cancle);
+
+    })();
+
+
+
+    $(".btn1").click(function() {
+
+
+        if ($.trim($(".input1").val()) == "" || $.trim($(".input1").val()) == "请输入关键字") {
+            alert("请输入关键字！");
+            return false;
+        } else {
+            if ($.trim($(".selet1").val()) == "news") {
+                window.location.href = "/sel_news.shtml?selTxt=" + escape($.trim($('.input1').val()))
+            } else {
+                window.location.href = "/sel_product.shtml?selTxt=" + escape($.trim($('.input1').val()))
+            }
+
+
+        }
+    });
+    $(".input1").keydown(function(event) {
+        if (event.keyCode == 13) {
+            $(".btn1").click();
+        }
+
+    })
+
+
+});

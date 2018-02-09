@@ -1,0 +1,32 @@
+﻿var arys1 = new Array();
+arys1 = $.trim($(".Hidden_newsdate").val()).split('-');     //日期为输入日期，格式为 2013-3-10
+var ssdate = new Date(arys1[0], parseInt(arys1[1] - 1), arys1[2]);
+$(".b2").html(arys1[2]);
+switch (ssdate.getDay()) {
+    case 1:
+        $(".b1").html("星期一");
+        break;
+    case 2:
+        $(".b1").html("星期二");
+        break;
+    case 3:
+        $(".b1").html("星期三");
+        break;
+    case 4:
+        $(".b1").html("星期四");
+        break;
+    case 5:
+        $(".b1").html("星期五");
+        break;
+    case 6:
+        $(".b1").html("星期六");
+        break;
+    case 0:
+        $(".b1").html("星期天");
+        break;
+
+}
+
+$(function() {
+    $(".proImg").LoadImage(true, 183, 123, "/UpLoadFile/loading.gif");
+})
