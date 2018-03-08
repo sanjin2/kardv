@@ -123,6 +123,7 @@ a{
 	float: right;
 	min-height: 500px;
 	background: burlywood;
+	padding-left:22px ;
 }
 .content .link{
 	margin-left: 20px;
@@ -187,4 +188,28 @@ a{
 }
 .foot .p_copy{
 	margin-top: 13px;
+}
+
+
+
+.content_right .company_summary{
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+.company_content .company_cont_left{
+	width: 239px;
+	height: 155px;
+	float: left;
+	
+}
+.company_content .company_cont_right{
+	width: 408px;
+	height: 170px;
+	font-size: 14px;
+	text-indent: 2em;
+	color: #999;
+	line-height: 20px;
+	float: right;
+	padding-right: 10px;
 }
