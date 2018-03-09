@@ -10,6 +10,7 @@ a{
 .head_wrap{
 	width: 100%;
 	background: linear-gradient(to bottom, #fff , #ccc) no-repeat;
+	background: #fbf9fa \9;
 }
 .head{
 	width: 1000px;
@@ -35,9 +36,11 @@ a{
 	color: #919191;
 }
 .head .head_right .head_right_search{
-	width: 100%;
+	width: 334px;
 	height:40px;
-	background:red;
+	background: url(../img/search_bg.png) no-repeat;
+	overflow: hidden;
+    border-radius: 20px;
 }
 .head_right_describe{
 	margin-top: 25px;
@@ -48,6 +51,7 @@ a{
 }
 .head_right_search{
 	margin-bottom: 5px;
+	
 }
 .nav{
 	width: 1000px;
@@ -115,6 +119,7 @@ a{
 	height: 30px;
 	line-height: 30px;
 	background: linear-gradient(to bottom, #dcdcdc , #cacaca) no-repeat;
+	background: #cacaca \9;
 	border-radius: 5px;
 	margin-bottom: 5px;
 }
