@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>基本地图展示</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.5&key=80f81780c6a321121f3585492e102235"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+<body>
+<div id="container" style="width: 560px;height: 361px;"></div>
+<a style="display: inline-block;margin-top: 360px;" href="https://ditu.amap.com/search?id=B00155QS8T&city=310104&geoobj=121.390747%7C31.168746%7C121.401046%7C31.174658&query_type=IDQ&query=%E7%A7%91%E8%BE%BE%E9%80%9A%E4%BF%A1%E9%9B%86%E5%9B%A2%E4%B8%8A%E6%B5%B7%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83&zoom=17">查看大图</a>
+<script>
+//基本功能代码
+//这里是设置地图中心点，比如这里选了一个绵阳为中心的坐标
+ var marker, map = new AMap.Map("container", {
+        resizeEnable: true,
+        center: [121.394252,31.171562],
+        zoom: 18
+    });
+
+    window.onload = function(){
+        addMarker();
+    }
+    // 实例化点标记
+    function addMarker() {
+        if (marker) {
+            return;
+        }
+        marker = new AMap.Marker({
+            icon: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+            position: [121.394252,31.171562]//在这里设置需要打点的坐标
+        });
+        marker.setMap(map);
+    }
+    
+    // /基本功能代码(实现标记点的功能)
+
+
+AMap.plugin(['AMap.ToolBar','AMap.Scale','AMap.OverView'],
+    function(){
+        map.addControl(new AMap.ToolBar());
+
+        map.addControl(new AMap.Scale());
+
+        map.addControl(new AMap.OverView({isOpen:true}));
+});
+
+
+</script>
+</body>
+</html>
