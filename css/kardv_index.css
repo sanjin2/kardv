@@ -9,8 +9,8 @@ a{
 }
 .head_wrap{
 	width: 100%;
-	background: linear-gradient(to bottom, #fff , #ccc) no-repeat;
-	background: #fbf9fa \9;
+	/*background: linear-gradient(to bottom, #fff , #ccc) no-repeat;*/
+	background: #fbf9fa ;
 }
 .head{
 	width: 1000px;
@@ -102,7 +102,8 @@ a{
 	width:280px;
 	min-height: 500px;
 	float: left;
-	background: bisque;
+	background: #f4f5f7;
+	padding-bottom: 36px;
 }
 .content .product_message{
 	margin-left: 20px;
@@ -119,8 +120,8 @@ a{
 	padding-left: 15px;
 	height: 30px;
 	line-height: 30px;
-	background: linear-gradient(to bottom, #dcdcdc , #cacaca) no-repeat;
-	background: #cacaca \9;
+	/*background: linear-gradient(to bottom, #dcdcdc , #cacaca) no-repeat;*/
+	background: #cacaca ;
 	border-radius: 5px;
 	margin-bottom: 5px;
 }
@@ -128,8 +129,10 @@ a{
 	width: 720px;
 	float: right;
 	min-height: 500px;
-	background: #fff;
+	background: #f4f5f7;
 	padding-left:22px ;
+	padding-right: 22px;
+	padding-bottom: 10px;
 	
 }
 .content .link{
@@ -258,6 +261,28 @@ a{
 .map{
 	position: relative;
 }
+.nav2{
+	float: right;
+}
+
+
+/*服务与支持*/
+.service_title{
+	display: inline-block;
+	padding: 10px 3px;
+	background:#4083ba ;
+	font-size:16px;
+	color: #fff;
+	font-weight: bold;
+}
+.service_margin{
+	margin: 28px 0 20px 0;
+}
+
+
+
+
+/* /服务与支持*/
 
 
 

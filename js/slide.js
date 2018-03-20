@@ -9,7 +9,6 @@
  // $(".pic li").eq(index).show().siblings().hide();
  $(".pic li").eq(index).fadeIn(500).siblings().fadeOut(500);
  });
-
  //向右切换
  var play=function(){
  i++;
@@ -28,7 +27,7 @@
  $(".pic li").eq(i).fadeIn(500).siblings().fadeOut(500);
  }
  //鼠标移入移出效果
- $("#container").hover(function() {
+ $("#container2").hover(function() {
  clearInterval(timer);
  }, function() {
  timer=setInterval(play,2000);
