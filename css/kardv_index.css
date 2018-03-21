@@ -1,160 +1,178 @@
-#web{
+#web {
 	min-width: 1000px;
 }
-body{
+
+body {
 	/*background: #ccc;*/
 }
-a{
+
+a {
 	color: #626262;
 }
-.head_wrap{
+
+.head_wrap {
 	width: 100%;
 	/*background: linear-gradient(to bottom, #fff , #ccc) no-repeat;*/
-	background: #fbf9fa ;
+	background: #fbf9fa;
 }
-.head{
+
+.head {
 	width: 1000px;
 	height: 130px;
 	margin: 0 auto;
 }
-.head .head_left{
+
+.head .head_left {
 	width: 368px;
 	float: left;
 }
-.head .head_left span{
+
+.head .head_left span {
 	display: inline-block;
 	height: 32.5px;
 }
-.head .head_left img{
+
+.head .head_left img {
 	display: block;
 	vertical-align: middle;
 }
-.head .head_right{
+
+.head .head_right {
 	width: 446px;
 	font-size: 12px;
 	float: right;
 	color: #919191;
 }
-.head .head_right .head_right_search{
+
+.head .head_right .head_right_search {
 	width: 334px;
-	height:40px;
+	height: 40px;
 	background: url(../img/search_bg.png) no-repeat;
 	overflow: hidden;
-    border-radius: 20px;
-    float: right;
+	border-radius: 20px;
+	float: right;
 }
-.head_right_describe{
+
+.head_right_describe {
 	margin-top: 25px;
 	text-align: right;
 }
-.head_right_special{
+
+.head_right_special {
 	margin-bottom: 11px;
 }
-.head_right_search{
+
+.head_right_search {
 	margin-bottom: 5px;
-	
 }
-.nav{
+
+.nav {
 	width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
-	
-}
-.nav ul{
-	
-}
-.nav ul li:first-child{
-	
 }
 
-.nav ul li:first-child a{
-	
-}
-.nav ul li{
+.nav ul {}
+
+.nav ul li:first-child {}
+
+.nav ul li:first-child a {}
+
+.nav ul li {
 	text-align: center;
-	width:120px ;
+	width: 120px;
 	height: 40px;
 	line-height: 40px;
 	float: left;
 	background: url(../img/line.jpg) 0 8px no-repeat;
 }
-.nav ul li a{
+
+.nav ul li a {
 	color: #000;
 	font-size: 14px;
 	display: inline-block;
 	width: inherit;
 	height: 24px;
 }
-.nav ul li.active{
+
+.nav ul li.active {
 	background: #fbaa25;
-	
 }
-.nav ul li.active a{
+
+.nav ul li.active a {
 	color: #fff;
 }
 
-.content{
+.content {
 	width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
 }
-.content .content_left{
-	width:280px;
+
+.content .content_left {
+	width: 280px;
 	min-height: 500px;
 	float: left;
 	background: #f4f5f7;
 	padding-bottom: 36px;
 }
-.content .product_message{
+
+.content .product_message {
 	margin-left: 20px;
 }
-.content .product_message h3{
-	font-size:20px ;
-	width:240px ;
+
+.content .product_message h3 {
+	font-size: 20px;
+	width: 240px;
 	height: 40px;
 	line-height: 40px;
-	
 }
-.content .product_message ul li{
+
+.content .product_message ul li {
 	width: 225px;
 	padding-left: 15px;
 	height: 30px;
 	line-height: 30px;
 	/*background: linear-gradient(to bottom, #dcdcdc , #cacaca) no-repeat;*/
-	background: #cacaca ;
+	background: #cacaca;
 	border-radius: 5px;
 	margin-bottom: 5px;
 }
-.content .content_right{
+
+.content .content_right {
 	width: 720px;
 	float: right;
 	min-height: 500px;
 	background: #f4f5f7;
-	padding-left:22px ;
+	padding-left: 22px;
 	padding-right: 22px;
 	padding-bottom: 10px;
-	
 }
-.content .link{
+
+.content .link {
 	margin-left: 20px;
 }
-.content .link h3{
+
+.content .link h3 {
 	font-size: 20px;
 	height: 40px;
 	line-height: 40px;
 }
-.content .company{
+
+.content .company {
 	font-size: 18px;
 	color: #3f7bc9;
 	margin-bottom: 10px;
 }
-.content .link p{
+
+.content .link p {
 	font-size: 14px;
 	color: #737373;
 	line-height: 23px;
 }
-.content .code{
-	width:240px ;
+
+.content .code {
+	width: 240px;
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
@@ -162,24 +180,23 @@ a{
 	margin-left: 20px;
 	margin-top: 20px;
 }
-.content .code_img img{
+
+.content .code_img img {
 	display: inline-block;
 	margin-top: 12px;
 }
-.content .code_img{
+
+.content .code_img {
 	width: 240px;
 	height: 155px;
 	/*line-height: 155px;*/
 	text-align: center;
 	margin-left: 20px;
-	margin-top:14px ;
+	margin-top: 14px;
 	border: 1px solid #ccc;
 }
 
-
-
-
-.foot{
+.foot {
 	width: 100%;
 	height: 123px;
 	background: #000;
@@ -187,32 +204,34 @@ a{
 	color: #CFCFCF;
 	font-size: 14px;
 }
-.foot p{
+
+.foot p {
 	text-align: center;
 }
-.foot .p_content{
+
+.foot .p_content {
 	padding-top: 26px;
 }
-.foot .p_address{
+
+.foot .p_address {
 	margin-top: 9px;
 }
-.foot .p_copy{
+
+.foot .p_copy {
 	margin-top: 13px;
 }
 
-
-
-.company_content{
+.company_content {
 	overflow: hidden;
 }
 
-.company_content .company_cont_left{
+.company_content .company_cont_left {
 	width: 239px;
 	height: 155px;
 	float: left;
-	
 }
-.company_content .company_cont_right{
+
+.company_content .company_cont_right {
 	width: 408px;
 	height: 170px;
 	font-size: 14px;
@@ -221,70 +240,124 @@ a{
 	line-height: 20px;
 	float: right;
 	padding-right: 10px;
-	
 }
 
+
 /*callme*/
-.callme_message{
+
+.callme_message {
 	width: 690px;
 	height: 370px;
 	background: url(../img/linkOur/j_contact_img2.jpg) no-repeat;
 }
-.callme_message .special{
+
+.callme_message .special {
 	font-size: 18px;
 	color: #999;
 	padding: 20px 0;
 	letter-spacing: 1px;
 }
-.callme_message p{
+
+.callme_message p {
 	font-size: 14px;
-	line-height:24px ;
+	line-height: 24px;
 	color: #999;
 	/*letter-spacing: 1px;*/
 }
-.code2 .linkcode{
+
+.code2 .linkcode {
 	margin-right: 97px;
 }
+
 .code2_cont {
 	margin-top: 30px;
 }
-.img_cont{
+
+.img_cont {
 	margin-top: 30px;
 	margin-bottom: 60px;
 }
-.img_cont img{
+
+.img_cont img {
 	display: inline-block;
 	width: 130px;
 	height: 130px;
 	margin-right: 114px;
 }
-.map{
+
+.map {
 	position: relative;
 }
-.nav2{
+
+.nav2 {
 	float: right;
 }
 
 
 /*服务与支持*/
-.service_title{
+
+.service_title {
 	display: inline-block;
 	padding: 10px 3px;
-	background:#4083ba ;
-	font-size:16px;
+	background: #4083ba;
+	font-size: 16px;
 	color: #fff;
 	font-weight: bold;
 }
-.service_margin{
+
+.service_margin {
 	margin: 28px 0 20px 0;
 }
-
-
 
 
 /* /服务与支持*/
 
 
+/*  产品展示*/
+
+.product_desc {
+	width: 100%;
+	height: 80px;
+	border: 1px solid #ccc;
+	padding: 5px 2px;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 30px 0;
+}
+
+.product_show {
+	width: 100%;
+	height: 125px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+
+.product_show .show_img {
+	width: 170px;
+	float: left;
+}
+
+.product_show .show_text {
+	width: 470px;
+	float: right;
+}
+
+.product_show .show_text .DL_title {
+	display: inline-block;
+	margin-top: 3px;
+	margin-bottom: 7px;
+}
+
+.product_show .show_text .classify {
+	color: #4083ba;
+	margin-bottom: 7px;
+}
+
+.product_show .show_text .classify_detail {
+	color: #999;
+	line-height: 16px;
+	font-size: 14px;
+}
 
 
-
+/* /产品展示*/
