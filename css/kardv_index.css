@@ -361,3 +361,29 @@ a {
 
 
 /* /产品展示*/
+
+/*关于乐容*/
+.happy_desc{
+	
+}
+.happy_desc .desc_l{
+	width: 60%;
+	float: left;
+	padding-right: 10px;
+}
+.happy_desc .desc_l p{
+	text-indent: 2em;
+	line-height: 26px;
+	color: #919191;
+}
+.happy_desc .desc_r{
+	width: 40%;
+	float: left;
+}
+.happy_desc .desc_r img{
+	width: 286px;
+	height: 183px;
+}
+
+
+/* /关于乐容*/
