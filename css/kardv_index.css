@@ -9,11 +9,20 @@ body {
 a {
 	color: #626262;
 }
+.clear_fix{
+	clear: both;
+}
 
 .head_wrap {
 	width: 100%;
 	/*background: linear-gradient(to bottom, #fff , #ccc) no-repeat;*/
 	background: #fbf9fa;
+}
+
+.container2 {
+	background: #f4f5f7;
+	width: 1000px;
+	margin: 0 auto;
 }
 
 .head {
@@ -69,7 +78,11 @@ a {
 .nav {
 	width: 1000px;
 	margin: 0 auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
+}
+.nav .aboutHappy_down{
+	display: none;
+	background: #fbaa25; width: 100%;height: 50px;    position: relative;z-index: 99;
 }
 
 .nav ul {}
@@ -362,28 +375,71 @@ a {
 
 /* /产品展示*/
 
+
 /*关于乐容*/
-.happy_desc{
-	
-}
-.happy_desc .desc_l{
+
+.happy_desc {}
+
+.happy_desc .desc_l {
 	width: 60%;
 	float: left;
 	padding-right: 10px;
 }
-.happy_desc .desc_l p{
+
+.happy_desc .desc_l p {
 	text-indent: 2em;
 	line-height: 26px;
 	color: #919191;
 }
-.happy_desc .desc_r{
+
+.happy_desc .desc_r {
 	width: 40%;
 	float: left;
 }
-.happy_desc .desc_r img{
+
+.happy_desc .desc_r img {
 	width: 286px;
 	height: 183px;
 }
 
 
 /* /关于乐容*/
+
+
+/*新闻动态*/
+
+.news_active {
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.news_active .ne_l {
+	float: left;
+}
+
+.news_active .ne_l p {
+	line-height: 28px;
+}
+
+.news_active .ne_l .l_one {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.news_active .ne_l .l_one a {
+	background: url(../img/news/news_icon.jpg) no-repeat left center;
+	display: inline-block;
+	padding-left: 12px;
+}
+
+.news_active .ne_l .l_two {
+	font-size: 14px;
+	color: #ccc;
+}
+
+.news_active .ne_r {
+	float: right;
+}
+
+
+/* /新闻动态*/

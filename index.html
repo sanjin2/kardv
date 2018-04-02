@@ -3,11 +3,14 @@
 
 	<head>
 		<meta charset="utf-8" />
+		<meta name="keywords" content="工业吸尘器,凯德威吸尘器官网,无尘室吸尘器,上海乐容实业有限公司,凯德威吸尘器,凯德威吸尘器生产厂家" />
+		<meta name="description" content="上海乐容实业有限公司专业生产工业吸尘器,上海工业吸尘器,无尘室吸尘器,凯德威吸尘器的生产和销售.公司生产销售的工业吸尘器,上海工业吸尘器,无尘室吸尘器质优价廉,让消费者买的舒心,用的放心.上海乐容欢迎您的来电,销售热线:400-820-1985" />
 		<title>凯德威</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/kardv_index.css" />
 		<link rel="stylesheet" href="css/slide.css" />
 		<link rel="stylesheet" href="css/public.css" />
+		<link rel="shortcut icon" href="img/Keda icon-2.ico" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/slide.js"></script>
 		<script>
@@ -48,9 +51,13 @@
 						<ul>
 							<li class="active">
 								<a href="index.html">凯德威</a>
+
 							</li>
 							<li>
 								<a href="aboutHappy.html">关于乐容</a>
+								<div class="aboutHappy_down" style="">
+
+								</div>
 							</li>
 							<li>
 								<a href="showProduct.html">产品展示</a>
@@ -72,34 +79,38 @@
 							</li>
 						</ul>
 					</div>
+					<div class="clear_fix"></div>
 
 				</nav>
 
 			</header>
 			<!--轮播图部分-->
 			<div class="container_wrap">
-				<div id="container2">
-					<ul class="pic">
-						<li>
-							<a href="javascript:;"><img src="img/banner01.jpg" alt="pic1"></a>
-						</li>
-						<li>
-							<a href="javascript:;"><img src="img/banner02.jpg" alt="pic2"></a>
-						</li>
-						<li>
-							<a href="javascript:;"><img src="img/banner03.png" alt="pic3"></a>
-						</li>
-					</ul>
-					<ul id="position">
-						<li class="cur"></li>
-						<li class=""></li>
-						<li class=""></li>
-					</ul>
-					<!--<a href="javascript:;" id="prev" class="arrow"><</a>
+				<div class="container2">
+
+					<div id="container2">
+						<ul class="pic">
+							<li>
+								<a href="javascript:;"><img src="img/banner01.jpg" alt="pic1"></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="img/banner02.jpg" alt="pic2"></a>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="img/banner03.png" alt="pic3"></a>
+							</li>
+						</ul>
+						<ul id="position">
+							<li class="cur"></li>
+							<li class=""></li>
+							<li class=""></li>
+						</ul>
+						<!--<a href="javascript:;" id="prev" class="arrow"><</a>
                      <a href="javascript:;" id="next" class="arrow">></a>-->
 
+					</div>
+					<!-- /container-->
 				</div>
-				<!-- /container-->
 			</div>
 			<!-- /container-wrap-->
 			<!-- /轮播图部分-->
@@ -227,12 +238,26 @@
 
 		</div>
 
-		
-<!-- JiaThis Button BEGIN -->
-<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-		
-		
+		<!-- JiaThis Button BEGIN -->
+		<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0" charset="utf-8"></script>
+		<!-- JiaThis Button END -->
+		<script>
+			$(document).ready(function() {
+
+				$(".nav ul li:not(':first')").hover(function() {
+					$(this).find(".aboutHappy_down").slideDown();
+					$(this).css("background", "#fbaa25");
+					$(this).find("a").css("color","#fff");
+					
+
+				}, function() {
+					$(this).find(".aboutHappy_down").slideUp();
+					$(this).css("background", "#e8e9eb");
+					$(this).find("a").css("color","#000");
+				})
+
+			})
+		</script>
 
 	</body>
 
