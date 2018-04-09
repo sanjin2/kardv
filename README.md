@@ -15,3 +15,12 @@ http://www.html5tricks.com/jquery-inout-image-slider.html
 http://www.lanrenzhijia.com/js/3812.html
 #外部分享插件
 http://www.jiathis.com/
+
+
+
+
+
+#遇见的问题
+mouseover 和 mouseout
+mouseleave 和 mouse
+

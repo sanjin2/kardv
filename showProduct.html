@@ -72,7 +72,7 @@
 							</li>
 						</ul>
 					</div>
-
+<div class="clear_fix"></div>
 				</nav>
 
 			</header>
@@ -208,8 +208,11 @@
 						</div>
 						
 						<div class="product_show">
-							<div class="show_img">
-								<img src="img/view.png" />
+							<div class="show_img" >
+								<div class="show_img_hide" >
+									heheda
+								</div>
+								<img id="showImg" src="img/view.png" />
 							</div>
 							<div class="show_text">
 								<a href="javascript:;" class="DL_title" style="">DL-1020凯德威吸尘器</a>
@@ -239,5 +242,20 @@
 				</div>
 			</footer>
 		</div>
+		<script>
+			$(function(){
+				$(".show_img").hover(function(){
+					$(".show_img_hide").animate({
+						left:0
+					})
+				},function(){
+					$(".show_img_hide").animate({
+						left:-184
+					})
+				})
+				
+			})
+			
+		</script>
 	</body>
 </html>
