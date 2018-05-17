@@ -5,7 +5,11 @@ company
 http://www.kardv.com/
 #商桥2016
 http://qiao.baidu.com/product/index.html
+#忠仕商务通 在线客服系统的领导者
+http://www.zoosnet.net/
 
+#香港网站
+https://www.bibgold.com
 
 
 
@@ -23,4 +27,7 @@ http://www.jiathis.com/
 #遇见的问题
 mouseover 和 mouseout
 mouseleave 和 mouse
+
+#小程序
+https://segmentfault.com/q/1010000012894477
 
