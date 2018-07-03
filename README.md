@@ -11,6 +11,12 @@ http://www.zoosnet.net/
 #香港网站
 https://www.bibgold.com
 
+#少了一个斜杠
+error address
+https://sanjin2.github.io/kardv
+right address
+https://sanjin2.github.io/chooseGod/
+
 
 
 
